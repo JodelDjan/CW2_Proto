@@ -6,8 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class ExploreClicked : MonoBehaviour
 {
-    public void LoadScene(string sceneName)
+    public void LoadScene(string MainScene)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(MainScene);
+    }
+
+        // Method to quit the application
+    public void QuitApplication()
+    {
+        Debug.Log("Quitting the application...");
+        Application.Quit();
     }
 }
